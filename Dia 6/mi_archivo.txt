@@ -1,0 +1,2 @@
+contenido eliminado y sobrescrito por la funcion
+se ha registrado un error de ejecución
