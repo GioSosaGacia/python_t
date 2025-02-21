@@ -25,7 +25,8 @@ class Cliente(Persona):
             self.balance -= monto_retiro
             print('Retiro realizado.')
         else:
-            print('Fondos Insuficientes')
+            print('Fondos Insuficientes'.center(40,'-'
+                                                   ''))
 
 
 def crear_cliente():
@@ -42,7 +43,7 @@ def inicio():
 
     while opcion != 'S':
         print('Elije : Depositar (D), Retirar (R), o Salir (S) ')
-        opcion = input()
+        opcion = input().upper()
 
         if opcion == 'D':
             monto_deposito  = int(input('Monto a depositar: '))
