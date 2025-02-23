@@ -106,3 +106,54 @@ def maybe_double_last(hand):
 
 
 print(maybe_double_last([1, 4, 11]))
+
+
+"""
+El método .get() de un diccionario en Python se utiliza para obtener el valor asociado a una clave especificada, 
+de manera más segura que acceder al diccionario directamente. La principal ventaja de usar .get() es que si la clave 
+no existe, en lugar de generar un error, devuelve un valor predeterminado que tú elijas.
+
+Sintaxis del .get():
+
+dict.get(key, default_value)
+key: Es la clave para la que deseas obtener el valor.
+default_value (opcional): Es el valor que se devuelve si la clave no se encuentra en el diccionario. Si no se proporciona,
+ el valor predeterminado es None.
+"""
+
+color_code_dict = {
+    "black": 0,
+    "brown": 1,
+    "red": 2,
+    "orange": 3,
+    "yellow": 4,
+    "green": 5,
+    "blue": 6,
+    "violet": 7,
+    "grey": 8,
+    "white": 9
+}
+
+# Función que devuelve el valor numérico asociado a un color
+def color_code(color):
+    color = color.lower()
+    return color_code_dict.get(color, "Invalid color")
+
+# Función que devuelve una lista de todos los colores disponibles
+def colors():
+    return list(color_code_dict.keys())  # Retorna los colores como una lista
+
+# Bloque de pruebas para verificar el funcionamiento de las funciones
+if __name__ == "__main__":
+    # Prueba de la función color_code
+    print("Test: color_code")
+    print(color_code("red"))        # Debería retornar 2
+    print(color_code("green"))      # Debería retornar 5
+    print(color_code("blue"))       # Debería retornar 6
+    print(color_code("black"))      # Debería retornar 0
+    print(color_code("brown"))      # Debería retornar 1
+    print(color_code("invalid_color"))
+
+    # Prueba de la función colors
+    print("\nTest: colors")
+    print(colors())
