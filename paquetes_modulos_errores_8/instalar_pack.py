@@ -12,7 +12,7 @@ iNICIAR LA BUSQUEDA CON PYTHON PACKAGE las mayoria existen en ingles for consol 
 3-Modulo = archivo con la extencion.py un modulo puede contener:
     Variables, funciones, clases etc.
     Un modulo se puede importar a otro usando Import + el nombre del modulo
-4-Paquetes es una carpeta qu contiene varios modulos y un:
+4-Paquetes es una carpeta que contiene varios modulos y un:
     archivo __init__.py  para que entienda que es un paqute y no una carpeta y puede tener subpaquetes pero con el 
     modulo __init__.py
     aritmetica.py
