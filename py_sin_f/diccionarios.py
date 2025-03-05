@@ -38,3 +38,15 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
 
 print(exchangeable_value(127.25, 1.20, 10, 20))
 exchangeable_value(127.25, 1.20, 10, 5)
+
+
+print('')
+print('Suma sin el operador de suma'.center(60,'-'))
+
+a = 4
+b = 8
+resultado = 0
+
+for n in range(a):
+    resultado += b
+print(resultado)
